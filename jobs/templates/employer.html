@@ -5,7 +5,7 @@
     <div class="description"></div>
     <<p>{{ employer['description'] }}</p>
   </div>
-  
+
   <h2>Jobs</h2>
   {{ show_jobs(jobs) }}
 
@@ -17,6 +17,7 @@
         <div class="media-left">
           {% for _ in range(0, review['rating']) %}
             <<span class="fa fa-star checked"></span>
+          {% end for%}
         </div>
         <div class="media-content">
           <div class="content">
